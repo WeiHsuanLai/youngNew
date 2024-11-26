@@ -5,6 +5,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "個人中心"
+			}
 		}
 	],
 	"globalStyle": {
@@ -13,5 +19,18 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#31C27C",
+		"list": [{
+				"text": "首頁",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"text": "個人中心",
+				"pagePath": "pages/user/user"
+			}
+		]
+	}
 }
