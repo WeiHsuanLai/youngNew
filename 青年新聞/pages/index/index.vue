@@ -10,7 +10,7 @@
 		<view class="content">
 			<view class="row" v-for="item in 10">
 				<!-- <newbox :item="{title:'首頁標題',author:'李四',hits: 700,}"></newbox> -->
-				<newbox></newbox>
+				<newbox @click.native="goDetail"></newbox>
 			</view>
 		</view>
 
@@ -25,14 +25,17 @@
 			}
 		},
 		onLoad() {
-			console.log("this.navIndex", this.navIndex);
+			// console.log("this.navIndex", this.navIndex);
 		},
 		methods: {
 			clickNav(index) {
 				this.navIndex = index
-				console.log("this.navIndex", this.navIndex);
+				// console.log("this.navIndex", this.navIndex);
+			},
+			// 測試
+			goDetail() {
 				uni.navigateTo({
-					url: '',
+					url: '/pages/detail/detail',
 					success: res => {},
 					fail: () => {},
 					complete: () => {}

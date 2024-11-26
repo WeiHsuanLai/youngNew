@@ -11,6 +11,13 @@
 			"style": {
 				"navigationBarTitleText": "個人中心"
 			}
+		},
+		{
+			"path" : "pages/detail/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新聞詳情"
+			}
 		}
 	],
 	"globalStyle": {
