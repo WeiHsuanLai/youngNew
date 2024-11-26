@@ -6,7 +6,9 @@
 		</scroll-view>
 
 		<view class="content">
-			<view class="row">每一行的新聞</view>
+			<view class="row" v-for="item in 10">
+				<newbox></newbox>
+			</view>
 		</view>
 
 	</view>
@@ -40,6 +42,15 @@
 			line-height: 100rpx;
 			padding: 0 30rpx;
 			color: #333;
+		}
+	}
+
+	.content {
+		padding: 30rpx;
+
+		.row {
+			border-bottom: 1px dotted #efefef;
+			padding: 20rpx 0;
 		}
 	}
 </style>
