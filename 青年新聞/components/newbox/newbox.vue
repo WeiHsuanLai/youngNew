@@ -5,10 +5,12 @@
 				<image src="/static/images/0.jpg" mode="aspectFill"></image>
 			</view>
 			<view class="text">
-				<text class="title">默認新聞標題默認新聞標題默認新聞標題默認新聞標題默認新聞標題默認新聞標題默認新聞標題默認新聞標題默認新聞標題</text>
+				<text class="title">
+					{{item.title}}
+				</text>
 				<view class="info">
-					<text>作者名稱</text>
-					<text>999瀏覽</text>
+					<text>{{item.author}}</text>
+					<text>{{item.hits}}瀏覽</text>
 				</view>
 			</view>
 		</view>
@@ -18,6 +20,20 @@
 <script>
 	export default {
 		name: "newbox",
+		props: {
+			item: {
+				type: Object,
+				default () {
+					return {
+						title: "組件內默認的標題",
+						author: "張三",
+						hits: 668,
+						picurl: "/static/images/0.jpg"
+					}
+				}
+			}
+		},
+
 		data() {
 			return {
 
