@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "青年幫新聞"
 			}
 		},
 		{
@@ -16,7 +16,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#31C27C",
 		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {},
@@ -27,8 +27,7 @@
 				"text": "首頁",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/logo/home-fill.svg",
-				"selectedIconPath": "static/logo/home-black.svg"
-
+				"selectedIconPath": "static/logo/home-green.svg"
 			},
 			{
 				"text": "個人中心",
