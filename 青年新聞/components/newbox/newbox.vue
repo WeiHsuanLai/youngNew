@@ -48,7 +48,7 @@
 			justify-content: space-between;
 
 			.title {
-				font-size: 38rpx;
+				font-size: 36rpx;
 				color: #333;
 				display: -webkit-box;
 				/* 使用 WebKit 的彈性盒子模型 */
