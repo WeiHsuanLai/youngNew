@@ -2,13 +2,7 @@
 	<view class="home">
 
 		<scroll-view scroll-x class="navScroll">
-			<view class="item">國內</view>
-			<view class="item">國內</view>
-			<view class="item">國內</view>
-			<view class="item">國內</view>
-			<view class="item">國內</view>
-			<view class="item">國內</view>
-			<view class="item">國內</view>
+			<view class="item" v-for="item in 10">國內</view>
 		</scroll-view>
 
 		<view class="content">
