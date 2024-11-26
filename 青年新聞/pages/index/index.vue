@@ -7,6 +7,7 @@
 
 		<view class="content">
 			<view class="row" v-for="item in 10">
+				<!-- <newbox :item="{title:'首頁標題',author:'李四',hits: 700,}"></newbox> -->
 				<newbox></newbox>
 			</view>
 		</view>

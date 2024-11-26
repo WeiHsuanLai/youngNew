@@ -2,16 +2,20 @@
 	<view>
 		<view class="new">
 			<view class="pic">
-				<image src="/static/images/0.jpg" mode="aspectFill"></image>
+				<image :src="item.picurl" mode="aspectFill"></image>
 			</view>
 			<view class="text">
 				<text class="title">
 					{{item.title}}
 				</text>
-				<view class="info">
+				<view class="info" v-if="!item.looktime">
 					<text>{{item.author}}</text>
 					<text>{{item.hits}}瀏覽</text>
 				</view>
+				<view class="info" v-else>
+					<text>瀏覽時間:{{item.looktime}}</text>
+				</view>
+
 			</view>
 		</view>
 	</view>
@@ -28,7 +32,8 @@
 						title: "組件內默認的標題",
 						author: "張三",
 						hits: 668,
-						picurl: "/static/images/0.jpg"
+						picurl: "/static/images/0.jpg",
+						// looktime: "2024-11-26 14:56:00"
 					}
 				}
 			}

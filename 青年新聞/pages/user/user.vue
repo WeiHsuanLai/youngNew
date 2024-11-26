@@ -7,6 +7,7 @@
 
 		<view class="content">
 			<view class="row" v-for="item in 10">
+				<!-- <newbox :item="{title:'user的標題',looktime:'2024-11-27 17:08:00',}"></newbox> -->
 				<newbox></newbox>
 			</view>
 		</view>
